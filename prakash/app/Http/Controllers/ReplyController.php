@@ -112,10 +112,10 @@ class ReplyController extends Controller
           $reply->save();
 
            
-        return redirect('query/index',$query->id)->with('message', 'Login Failed');
-         return redirect('query/show',$query->id);
+        //return redirect('query/index');
+       //  return redirect('query/show',$query->id);
        //return redirect()->back()->with('message', 'edit success');
-         // return redirect()->route('query.show',$query->id);
+         return redirect()->route('query.index');
     }
 
 
